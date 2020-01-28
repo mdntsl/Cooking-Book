@@ -1,0 +1,24 @@
+<div *ngIf='selected' class="container">
+    <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Recipe</th>
+            <th scope="col">Ingradients</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr *ngFor="let item of result">
+            <th scope="row">{{item.Date}}</th>
+            <td >{{item.Recipe}}</td >
+            <td>{{item.Ingradients}}</td>
+          </tr>
+    
+          
+        </tbody>
+      </table>
+</div>
+<div  *ngIf='!selected' class="container">
+    <button class=" btn btn-dark shadow p-3 mb" (click)="selectChanger()">History of Updates</button>
+</div>

@@ -1,0 +1,13 @@
+button {
+    margin-top: 0.5cm;
+    width:100%;
+}
+form {
+    padding-top: 1cm;
+    background-image: url(https://media1.s-nbcnews.com/j/newscms/2019_50/3146046/191212-stock-kitchen-cooking-wok-ew-228p_02b448af054ee73a0103f9b0353a525f.fit-760w.jpg);
+    width: 20cm;
+}
+
+.form-group{
+    margin-left:32%;
+}

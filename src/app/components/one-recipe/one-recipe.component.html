@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+                <div *ngFor="let item of result" class="row rounded">
+                    <form class =  "border rounded">
+                         <div class="text-white">
+                            <H2>{{item.Title}}</H2>               
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6 ">
+                            <label class="text-white" for="Ingradients">Ingradients</label><br>
+                            <label class="text-white" for="Ingradients">{{item.Ingradients}}</label>
+                            <textarea class="form-control" id="Ingradients" rows="5" cols="7" name="ingradients"  [(ngModel)]="dish.ingradients">Write your text here</textarea>
+                        </div>
+                        <div class="form-group col-6 ">
+                            <label class="text-white" for="Recipe">Recipe</label><br>
+                            <label class=" text-white" for="Recipe">{{item.Recipe}}</label>
+                            <textarea class="form-control" id="Recipe" rows="5" cols="7" name="Recipe"  [(ngModel)]="dish.recipe"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-secondary" (click)='editRecipe(dish)'>Edit</button>
+                    </div>
+                </form>
+                </div>
+        </div>
+
+    </div>
+</div>
+<app-updateform></app-updateform>
