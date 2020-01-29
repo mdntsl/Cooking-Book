@@ -1,6 +1,6 @@
 const express = require('express');
 const routs = express.Router();
-const handlers = require('../handlers/handlers');
+const handlers = require('../handlers/apiQueryhandlers');
 
 
 
